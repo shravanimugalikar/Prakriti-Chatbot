@@ -9,6 +9,7 @@ A complete AI-powered Ayurveda wellness platform that integrates:
 -HTML/CSS responsive frontend
 
 **Key Features:**
+
 **1. AI-Powered Prakriti Chatbot**
 -Built using Google Gemini 2.0 Flash
 -Uses RAG (Retrieval-Augmented Generation) for accurate Ayurvedic answers
@@ -41,6 +42,7 @@ A complete AI-powered Ayurveda wellness platform that integrates:
 
 
 **Algorithms & Techniques Used:**
+
 **1. Retrieval-Augmented Generation (RAG)**
 -Converts PDF knowledge base into text chunks
 -Generates embeddings using SentenceTransformer
@@ -66,6 +68,7 @@ A complete AI-powered Ayurveda wellness platform that integrates:
 -Handles HTML formatted email
 
 **Tech Stack:**
+
 **Frontend**
 -HTML5, CSS3
 -Streamlit (Chatbot + Quiz)
