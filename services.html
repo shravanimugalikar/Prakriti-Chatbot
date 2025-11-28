@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Prakriti Chatbot</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: 
+            linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+            url('sl_062420_31950_19.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(46, 125, 50, 0.9); /* added slight transparency */
+        padding: 1rem 2rem;
+        color: white;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 15px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #c8e6c9;
+    }
+
+    .services-container {
+        max-width: 1100px;
+        margin: 3rem auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        background: rgba(255, 255, 255, 0.85); /* semi-transparent white background */
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card h2 {
+        color: #2e7d32;
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+    }
+
+    .service-card p {
+        color: #555;
+        line-height: 1.5;
+        font-size: 0.95rem;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Prakriti Chatbot</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="http://localhost/prakriti_consult/login.html">Login</a>
+            <a href="http://localhost/prakriti_consult/registration.html">Register</a>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <div class="services-container">
+        <div class="service-card">
+            <h2>Doctor Consultation</h2>
+            <p>Connect with Ayurvedic practitioners for personalized health guidance tailored to your needs.</p>
+             <a href="http://localhost/prakriti_consult/drcon.html" class="doctor-button">
+                Doctor Consultation
+            </a>
+        </div>
+ <style>
+.doctor-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66bb6a;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.doctor-button:hover {
+    background-color: #388e3c;
+}
+</style>
+
+        <div class="service-card">
+           <h2>Chat with ChatBot</h2>
+           <p>Ask questions and get instant Ayurvedic health insights from our interactive chatbot.</p>
+           <a href="http://localhost:8502" target="_blank" class="chatbot-button">
+              Chatbot
+           </a>
+        </div>
+
+<style>
+.chatbot-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66bb6a;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.chatbot-button:hover {
+    background-color: #388e3c;
+}
+</style>
+
+        <div class="service-card">
+            <h2>Prakriti Analysis</h2>
+            <p>Discover your Prakriti type and receive tailored lifestyle and diet recommendations.</p>
+            <a href="http://localhost:8501" target="_blank" class="analysis-button">
+               Prakriti Analysis
+            </a>
+        </div>
+<style>
+.analysis-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66bb6a;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.analysis-button:hover {
+    background-color: #388e3c;
+} 
+</style>
+    </div>
+
+</body>
+
+</html>

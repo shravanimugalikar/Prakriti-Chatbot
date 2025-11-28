@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakriti Chatbot</title>
+    <style>
+    /* Reset and Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        color: #1b5e20;
+        /* Background Image with Light Transparency */
+        background: 
+            linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
+            url('Green Ayurvedic image.png') no-repeat center center fixed;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #2e7d32;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a5d6a7;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #1b5e20;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            color: #33691e;
+        }
+
+        .hero a {
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .hero a:hover {
+            background-color: #1b5e20;
+            transform: scale(1.05);
+        }
+
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .features h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #2e7d32;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            padding: 45px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font: 1em century gothic;
+
+        }
+
+        .feature-card h3 {
+            color: #254b41;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: black;
+            font-size: 0.95rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <h1>Prakriti Chatbot</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="http://localhost/prakriti_consult/login.html">Login</a>
+            <a href="http://localhost/prakriti_consult/registration.html">Register</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h2>Your Nature & Wellness Assistant </h2>
+        <p>Prakriti Chatbot helps you explore eco-friendly living, nature's wisdom, and wellness tips — all in one
+            place.</p>
+        <a href="services.html">Get Started</a>
+    </section>
+
+    <section class="features" id="features">
+        <h3>Why Choose Prakriti?</h3>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h4> Nature Tips</h4>
+                <p>Get daily tips on sustainable living and connecting with nature.</p>
+            </div>
+            <div class="feature-card">
+                <h4>Smart Chat</h4>
+                <p>Ask questions and get instant eco-friendly advice from AI.</p>
+            </div>
+            <div class="feature-card">
+                <h4> Wellness Guide</h4>
+                <p>Learn natural remedies and holistic wellness practices.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ayurveda & Doshas</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ayustyle.css">
+</head>
+
+<body class="antialiased text-gray-800">
+
+    <div class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+
+        <header class="text-center mb-8 w-full">
+            <h1 class="text-4xl font-bold text-teal-700 mb-2">Ayurveda & Doshas</h1>
+            <p class="text-lg text-gray-600">Discover your unique body-mind type.</p>
+        </header>
+
+
+        <main class="container mx-auto px-4">
+
+
+            <section id="introduction" class="card">
+                <h2 class="text-3xl font-semibold text-teal-800 mb-4">What is Ayurveda?</h2>
+                <p class="text-base leading-relaxed text-gray-700 mb-3">
+                    Ayurveda is an ancient Indian health system focused on balancing your body and mind. It teaches that
+                    everything, including us, is made of five elements: Earth, Water, Fire, Air, and Ether.
+                </p>
+                <p class="text-base leading-relaxed text-gray-700">
+                    These elements combine to form three unique energies in your body called Doshas: Vata, Pitta,
+                    and Kapha. Your unique mix of these Doshas is called your Prakriti, defining your natural
+                    constitution.
+                </p>
+            </section>
+
+
+            <section id="doshas" class="card">
+                <h2 class="text-3xl font-semibold text-teal-800 mb-6 text-center">The Three Doshas</h2>
+                <div class="flex flex-wrap justify-center items-stretch -mx-2">
+
+                    <div class="dosha-card vata-simple-bg">
+                        <h3 class="dosha-title-simple text-blue-700">Vata</h3>
+                        <p class="text-sm text-gray-600 mb-2">Elements: Air & Ether</p>
+                        <p class="text-sm text-gray-700 leading-normal text-left">
+                            <span class="font-medium">Governs:</span> Movement, breathing, circulation.
+                            <br><span class="font-medium">Traits:</span> Quick, creative, energetic. Can be anxious or
+                            restless when out of balance.
+                        </p>
+                    </div>
+
+                    <div class="dosha-card pitta-simple-bg">
+                        <h3 class="dosha-title-simple text-red-700">Pitta</h3>
+                        <p class="text-sm text-gray-600 mb-2">Elements: Fire & Water</p>
+                        <p class="text-sm text-gray-700 leading-normal text-left">
+                            <span class="font-medium">Governs:</span> Digestion, metabolism, intelligence.
+                            <br><span class="font-medium">Traits:</span> Focused, intelligent, intense. Can be irritable
+                            or prone to anger when out of balance.
+                        </p>
+                    </div>
+
+                    <div class="dosha-card kapha-simple-bg">
+                        <h3 class="dosha-title-simple text-green-700">Kapha</h3>
+                        <p class="text-sm text-gray-600 mb-2">Elements: Earth & Water</p>
+                        <p class="text-sm text-gray-700 leading-normal text-left">
+                            <span class="font-medium">Governs:</span> Structure, lubrication, stability.
+                            <br><span class="font-medium">Traits:</span> Calm, stable, loving. Can be lethargic or
+                            resistant to change when out of balance.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="balancing" class="card">
+                <h2 class="text-3xl font-semibold text-teal-800 mb-4">Balancing Your Doshas</h2>
+                <p class="text-base leading-relaxed text-gray-700 mb-3">
+                    Ayurveda suggests adjusting your lifestyle, diet, and habits to bring your Doshas into harmony.
+                </p>
+                <ul class="list-disc list-inside text-base text-gray-700 space-y-1">
+                    <li><span class="font-medium">Vata:</span> Focus on warmth, routine, and moist, grounding foods.
+                    </li>
+                    <li><span class="font-medium">Pitta:</span> Emphasize cooling foods, moderation, and relaxation.
+                    </li>
+                    <li><span class="font-medium">Kapha:</span> Prioritize stimulating activities, light foods, and
+                        regular exercise.</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="mt-8 text-center text-gray-500 text-xs">
+            <p>&copy; 2025 Prakriti Analysis . Simplified for you.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
