@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Consultation | Prakriti</title>
+  <link rel="stylesheet" href="drcon.css">
+
+  <!-- Working Doctor Icon CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .error {
+      color: #e53935;
+      font-size: 14px;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .success-message {
+      color: green;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 15px;
+      display: none;
+    }
+
+    /* Doctor icon styling */
+    .title i {
+      color: #2e7d32;
+      margin-right: 10px;
+      font-size: 32px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="consultation-container">
+
+    <h1 class="title">
+      Prakriti Doctor Consultation
+    </h1>
+
+    <p class="subtitle">Book a personalized consultation with our Ayurveda specialist</p>
+
+    <div class="doctor-card">
+  
+  <!-- Doctor Icon Added Here -->
+  <i class="fa-solid fa-user-doctor doctor-icon"></i>
+  <h2>Dr. Ratnaparkhi</h2>
+  <p class="doctor-speciality">Ayurveda & Holistic Wellness Expert</p>
+  <p class="doctor-desc">
+    Dr. Ratnaparkhi specializes in lifestyle balance, herbal therapy, and Prakriti-based treatment for body and mind harmony.
+  </p>
+</div>
+
+
+    <form class="consultation-form" id="consultationForm" method="POST" action="submit.php" novalidate>
+  <h3>Book Your Consultation</h3>
+
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+  </div>
+
+  <div class="form-group">
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="preferred_date">
+  </div>
+
+  <div class="form-group">
+    <label for="message">Describe Your Concern</label>
+    <textarea id="message" name="message" rows="3" placeholder="Tell us about your health concern..."></textarea>
+  </div>
+
+  <button type="submit" class="btn">Book Consultation</button>
+</form>
+
+
+    <div id="successMessage" class="success-message">✅ Your consultation has been booked successfully!</div>
+  </div>
+
+  <script src="drcon.js"></script>
+</body>
+</html>

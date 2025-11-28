@@ -1,0 +1,154 @@
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+  color: #2e7d32;
+}
+
+/* Container */
+.consultation-container {
+  max-width: 750px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
+  padding: 30px 40px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  color: #1b5e20;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #4e944f;
+  margin-bottom: 25px;
+}
+
+/* Doctor Card */
+.doctor-card {
+  background: #f1f8e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 8px rgba(46, 125, 50, 0.15);
+}
+
+.doctor-img {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.doctor-icon {
+  font-size: 80px;   
+  color: #2e7d32;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+
+.doctor-speciality {
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
+.doctor-desc {
+  color: #33691e;
+  font-size: 0.95rem;
+}
+
+/* Form */
+.consultation-form {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.consultation-form h3 {
+  text-align: center;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2e7d32;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #a5d6a7;
+  border-radius: 8px;
+  background: #f9fff9;
+  font-size: 0.95rem;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #43a047;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #66bb6a, #43a047);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #43a047, #2e7d32);
+  transform: scale(1.02);
+}
+
+/* Success Message */
+.success-message {
+  display: none;
+  margin-top: 25px;
+  padding: 12px;
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #81c784;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Error style */
+.error {
+  color: #e53935;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+
+input, textarea {
+  border: 1.5px solid #a5d6a7; /* default green border */
+  border-radius: 8px;
+  padding: 10px;
+}
