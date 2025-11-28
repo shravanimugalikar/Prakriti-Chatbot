@@ -79,8 +79,9 @@ A complete AI-powered Ayurveda wellness platform that integrates:
 -Gemini uses retrieved context to produce accurate answers
 
 **2. NLP Intent Classification**
+
 -Detects when user asks:
-"Find my Prakriti"
+"Find my Prakriti",
 "I want to know my body type"
 
 **3. Naive Bayes Based Prakriti Classification**
