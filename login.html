@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Prakriti Chatbot</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url("prakritibg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+            color: #2e7d32;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 3rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2e7d32;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1b5e20;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1.8px solid #c8e6c9;
+            outline: none;
+            font-size: 0.95rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #2e7d32;
+            box-shadow: 0 0 8px rgba(46, 125, 50, 0.25);
+        }
+
+        .error-msg {
+            color: red;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #2e7d32;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .btn:hover {
+            background-color: #1b5e20;
+            transform: scale(1.03);
+        }
+
+        .text-center {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #33691e;
+        }
+
+        .text-center a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .text-center a:hover {
+            color: #1b5e20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Login</h2>
+
+        <!-- FIXED: added name="email" and name="password" -->
+        <form id="loginForm" method="POST" action="login.php">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <div class="error-msg" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                <div class="error-msg" id="passwordError"></div>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <div class="text-center">
+            Don't have an account? <a href="registration.html">Register</a>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+
+        loginForm.addEventListener('submit', function (e) {
+
+            // Clear errors
+            document.querySelectorAll('.error-msg').forEach(el => el.textContent = '');
+
+            let isValid = true;
+
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value;
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = "Please enter a valid email.";
+                isValid = false;
+            }
+
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+            if (!passwordRegex.test(password)) {
+                document.getElementById('passwordError').textContent =
+                    "Password must be at least 6 characters, include uppercase, lowercase, and number.";
+                isValid = false;
+            }
+
+            if (!isValid) {
+                e.preventDefault(); // stop submit only when invalid
+            }
+        });
+    </script>
+
+</body>
+
+</html>
